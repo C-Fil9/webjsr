@@ -1,0 +1,113 @@
+.container {
+  padding: 2rem;
+  background-color: #f0f2f5;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #535050;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.userTable thead {
+  background-color: #eaeaea;
+}
+
+.userTable th,
+.userTable td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.userTable th {
+  font-weight: 600;
+}
+
+.userTable tr:hover td {
+  background-color: #f9f9f9;
+}
+
+.userTable button {
+  margin: 0 4px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Nút Sửa */
+.userTable button:nth-child(2),
+.userTable button:contains("Sửa") {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.userTable button:nth-child(2):hover,
+.userTable button:contains("Sửa"):hover {
+  background-color: #138496;
+}
+
+/* Nút Xóa */
+.userTable button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.userTable button:last-child:hover {
+  background-color: #bd2130;
+}
+
+/* Nút Lưu / Hủy */
+.userTable button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.userTable button:first-child:hover {
+  background-color: #218838;
+}
+
+.userTable select {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 8px;
+}

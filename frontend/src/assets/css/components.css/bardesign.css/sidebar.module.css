@@ -1,0 +1,63 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -240px;
+  width: 240px;
+  height: 100vh;
+  background: #1e1e2f;
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 1001;
+}
+
+.menuButtonInside {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 24px;
+  margin: 16px 16px 0 auto;
+  display: block;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.menuButtonInside:hover {
+  color: #aaa;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.menu {
+  padding: 20px;
+  display: flex; /* Adjust for header height */
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  color: #aaa;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: none;
+}
+
+.sidebar.open ~ .overlay {
+  display: block;
+}

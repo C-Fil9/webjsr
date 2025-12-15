@@ -1,0 +1,76 @@
+.sectionWrapper {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: left;
+  color: #2c3e50;
+  padding-left: 12px;
+  text-decoration: underline;
+  text-decoration-color: #2c3e50;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 1.5px;
+}
+
+.sliderContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sliderWrapper {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  scrollbar-width: none; /* ẩn thanh cuộn Firefox */
+  -ms-overflow-style: none; /* ẩn thanh cuộn IE/Edge */
+  width: 100%;
+}
+.sliderWrapper::-webkit-scrollbar {
+  display: none; /* ẩn thanh cuộn Chrome, Safari */
+}
+
+.bookItem {
+  flex: 0 0 auto; /* giữ size cố định, không co giãn */
+  width: 230px; /* bằng với kích thước bookcart */
+  transition: transform 0.3s ease-in-out;
+}
+
+.bookItem:hover {
+  transform: scale(1.05);
+  z-index: 5;
+}
+
+.arrowBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 111, 97, 0.9);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s;
+  user-select: none;
+}
+
+.arrowBtn:hover {
+  background-color: rgba(224, 82, 69, 0.9);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}

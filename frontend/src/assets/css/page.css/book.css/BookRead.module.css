@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+  padding: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 300px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.chapterList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chapterItem {
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chapterItem:hover {
+  background-color: #e0e0e0;
+}
+
+.chapterItem.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.reader {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style chung cho cả PDF và Word */
+.reader p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.reader h1, .reader h2, .reader h3 {
+  margin: 1em 0;
+  color: #333;
+}
+
+.reader img {
+  max-width: 100%;
+  height: auto;
+  margin: 1em 0;
+  display: block;
+}
+
+/* Style riêng cho Word */
+.reader.docx {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.reader.docx table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.reader.docx th, .reader.docx td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.reader.docx th {
+  background-color: #f5f5f5;
+}
+
+/* Style riêng cho PDF */
+.reader.pdf {
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+}
+
+.reader.pdf p {
+  margin-bottom: 1.5em;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}

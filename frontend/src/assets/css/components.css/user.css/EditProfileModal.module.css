@@ -1,0 +1,79 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modalContainer {
+  background-color: white;
+  padding: 1.5rem; /* p-6 */
+  border-radius: 1rem; /* rounded-xl */
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1); /* shadow-lg */
+  width: 100%;
+  max-width: 28rem; /* max-w-md */
+}
+
+.title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.label {
+  display: block;
+  margin-bottom: 1rem; /* mb-4 */
+  color: #4B5563; /* text-gray-700 */
+}
+
+.fileInput {
+  display: block;
+  margin-top: 0.5rem; /* mt-2 */
+}
+
+.previewImage {
+  margin-top: 0.5rem; /* mt-2 */
+  width: 6rem; /* w-24 */
+  height: 6rem; /* h-24 */
+  object-fit: cover;
+  border-radius: 9999px; /* rounded-full */
+}
+
+.textInput {
+  width: 100%;
+  padding: 0.5rem; /* p-2 */
+  border: 1px solid #D1D5DB; /* border */
+  border-radius: 0.375rem; /* rounded */
+  margin-bottom: 1rem; /* mb-4 */
+  font-size: 1rem;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem; /* gap-2 */
+}
+
+.buttonCancel {
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  background-color: #D1D5DB; /* bg-gray-300 */
+  border-radius: 0.375rem; /* rounded */
+  cursor: pointer;
+  border: none;
+}
+
+.buttonSave {
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  background-color: #2563EB; /* bg-blue-600 */
+  color: white;
+  border-radius: 0.375rem; /* rounded */
+  cursor: pointer;
+  border: none;
+}
+
+.buttonSave:hover {
+  background-color: #1D4ED8; /* hover:bg-blue-700 */
+}
